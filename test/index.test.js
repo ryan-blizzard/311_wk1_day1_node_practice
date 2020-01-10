@@ -22,7 +22,7 @@ describe('Numbers module', () => {
 describe('Strings module', () => {
 
   test('Split a string on the given delimeter', () => {
-    const split = strings.split('a-new-string', '-')
+    const split = strings.split('a-new-string', "-")
     expect(split.length).toEqual(3)
     expect(split[0]).toBe('a')
     expect(split[1]).toBe('new')
