@@ -15,8 +15,18 @@ const sum = (arr) => { //reduce method
 
 const comboSum = (arr, sum) => { //reduce method
   // write code for numbers.comboSum
+  let result = 0;
 
-
+  for (i = 0; i < arr.length; i++){
+    for (j = 0; j < arr.length; j++){
+      if (i !== j) {
+        if (arr[i] + arr[j] === sum){
+          return true
+        };
+      }
+    }
+  }
+return false
 }
 
 module.exports = {
